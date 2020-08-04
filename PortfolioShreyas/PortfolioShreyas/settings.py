@@ -25,7 +25,7 @@ STATICFILES_DIRS = [
 SECRET_KEY = 'w!1i$lr-(dy@5*fcyls9mz_55kw6zgj=-rhcd=_b(*ktey_5nn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'PortfolioShreyas'
 
 ]
 
@@ -77,7 +78,7 @@ WSGI_APPLICATION = 'PortfolioShreyas.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
